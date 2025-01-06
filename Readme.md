@@ -32,6 +32,9 @@
 ## Overview
 
 ![screenshot](project_screenshot/home_list.png)
+
+<hr>
+
 ![screenshot](project_screenshot/post_detail.png)
 ![screenshot](project_screenshot/register.png)
 ![screenshot](project_screenshot/login.png)
