@@ -19,14 +19,14 @@ rm -rf klkf.txt
 - pythonanywhere deki bash terminale;
 
 ```bash
-git clone https://github.com/Umit8098/Proj_Auth_Dj_Allauth_Google_Official_doc_CH-11_V.02.git
+git clone https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git
 ```
 
-- project imizi pythonanywhere clonladık.
+- project imizi pythonanywhere clone'ladık.
 - terminalde ls komutuyla dosyaları görüyoruz,
 - projemizin içine, manage.py dosyasıyla aynı seviyeye geliyoruz (cd komutuyla), yani ls komutunu çalıştırdığımızda manage.py ı görmemiz lazım.
 
-- Türkiyede cloud platformlar çok kullanılmıyor, genelde Dedicated Server lar üzerinden işlemler yapılıyor. Tüm proje o server içerisinde oluyor. Servera girip, projeyi clonlama işlemi yapılıyor, veya pipeline kuruluyor (localde bir değişiklik yapıldı, github a pushlandı, merge oldu, development server ından bu değişikliğin algılanıp canlıda değişiklik yapılması...). Bunun için github hook ları var, bu hooklar ile işlem yapılıyor.  Bir değişiklik olduğunda github hookları takip ediliyor, değişiklik olduğunda trigger ediyor, o trigger ile server ınızda otomatik git pull yapıyor, değişiklikleri çekiyor, projeyi yeni şekliyle ayağa kaldırıyor.
+- Türkiyede cloud platformlar çok kullanılmıyor, genelde Dedicated Server lar üzerinden işlemler yapılıyor. Tüm proje o server içerisinde oluyor. Server'a girip, projeyi clone'lama işlemi yapılıyor, veya pipeline kuruluyor (localde bir değişiklik yapıldı, github a pushlandı, merge oldu, development server ından bu değişikliğin algılanıp canlıda değişiklik yapılması...). Bunun için github hook ları var, bu hooklar ile işlem yapılıyor.  Bir değişiklik olduğunda github hookları takip ediliyor, değişiklik olduğunda trigger ediyor, o trigger ile server ınızda otomatik git pull yapıyor, değişiklikleri çekiyor, projeyi yeni şekliyle ayağa kaldırıyor.
 
 - Localde iken yapmamız gereken işlemlerin aynısını yapıyoruz;
     - virtual environment oluşturuyoruz,
@@ -62,7 +62,7 @@ No matching distribution found for Django==5.1.1 (from -r requirements.txt (line
         All done! Your web app is now set up. Details below. 
         (Hepsi tamam! Web uygulamanız artık kuruldu. Detaylar aşağıda.)
   - Artık app kuruldu ve app ile ilgili bir dashboard sundu bize. Burada manuel configurations lar yapacağız. 
-        Bu site 28 Temmuz 2024 Pazar günü devre dışı bırakılacaktır. Buradan 3 ay daha app i çalıştırmak için bir button var.
+        Bu site 6 Nisan 2025 Pazar günü devre dışı bırakılacaktır. Buradan 3 ay daha app i çalıştırmak için bir button var.
 
 - Şimdi yapacağımız işlemler -> 
   - Code:
@@ -105,7 +105,7 @@ application = get_wsgi_application()
 path = '/home/umit8110/Proj_Auth_Dj_Allauth_Google_Official_doc_CH-11_V.02'
 ```
 
-- os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'  -> settings klasörümüzün bulunduğu yeri belirtiyoruz. Bizim settings klasörümüz core in altında. buraya 'core.settings' yazıyoruz.
+- os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'  -> settings klasörümüzün bulunduğu yeri belirtiyoruz. Bizim settings klasörümüz main'in altında. buraya 'main.settings' yazıyoruz.
 
 ```py
 os.environ['DJANGO_SETTINGS_MODULE'] = 'weather.settings'
@@ -172,10 +172,14 @@ DATABASES = {
 
 .env
 ```py
-SECRET_KEY=o_zoo)sc$ef3bbctpryhi7pz!i)@)%s!ffg_zsxd^n+z+h5=7i
-DEBUG=True
-ENV_NAME=development
-DJANGO_LOG_LEVEL=INFO
+SECRET_KEY =django-insecure-+&0#(m@k4aj0atl5&62g&=f77%5v7@jws*r2cn&m-iuidxw_xr
+
+# Sending email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = developerumit@gmail.com
+EMAIL_HOST_PASSWORD = gnqrzztdyqeebsxt
+EMAIL_USE_TLS = True
 ```
 
 - bash console a gidip db mizdeki tablolarımız oluşturacağız.
@@ -208,12 +212,12 @@ python manage.py collectstatic
 - bu komut çalıştırıldıktan sonra; 197 adet static file kopyalandı ve belirttiğimiz folder altında toplandı.
 " 162 static files copied to '/home/umit8104/Project_Django_Rest_Framework_Rent_A_Car_App_CH-12/static'. "
 
-- Şimdi dashboarda gidip, web kısmında Static files: kısmında URL altında URL ini (/static/),  ve Directory altında path ini giriyoruz. (path ini zaten bize vermişti -> 197 static files cop..... kısmının sonunda. (/home/umit8098/Project_Django_Rest_Framework_Stock_App/core/static))
+- Şimdi dashboarda gidip, web kısmında Static files: kısmında URL altında URL ini (/static/),  ve Directory altında path ini giriyoruz. (path ini zaten bize vermişti -> 127 static files cop..... kısmının sonunda. (/home/umit8112/Proj_Django_Temp_Blog_App_CH-8/static))
 - girdikten sonra ✔ işareti ile kaydetmeliyiz.
   
 ```py
 /static/
-/home/umit8098/Project_Django_Rest_Framework_Stock_App/core/static
+/home/umit8112/Proj_Django_Temp_Blog_App_CH-8/static
 ```
 
 - Bu işlemi yaptıktan sonra değişikliklerin algılanması için tekrardan Reload butonuna tıklıyoruz. Artık sayfalarımızın statics leri de geliyor.
