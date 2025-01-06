@@ -33,31 +33,31 @@
 
 ![screenshot](project_screenshot/home_list.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/post_detail.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/register.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/login.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/profile.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/admin_panel.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/change_password.png)
 
-<hr>
+---
 
 ![screenshot](project_screenshot/reset_password.png)
 
