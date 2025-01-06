@@ -22,6 +22,13 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+- [](#)
+- [](#-1)
+- [](#-2)
+- [](#-3)
+- [](#-4)
+- [](#-5)
+- [](#-6)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
@@ -32,33 +39,19 @@
 ## Overview
 
 ![screenshot](project_screenshot/home_list.png)
-
 ---
-
 ![screenshot](project_screenshot/post_detail.png)
-
 ---
-
 ![screenshot](project_screenshot/register.png)
-
 ---
-
 ![screenshot](project_screenshot/login.png)
-
 ---
-
 ![screenshot](project_screenshot/profile.png)
-
 ---
-
 ![screenshot](project_screenshot/admin_panel.png)
-
 ---
-
 ![screenshot](project_screenshot/change_password.png)
-
 ---
-
 ![screenshot](project_screenshot/reset_password.png)
 
 ## Built With
