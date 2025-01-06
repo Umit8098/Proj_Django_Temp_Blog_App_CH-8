@@ -90,6 +90,7 @@ $ git clone https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git
 - Users can view posts anonymously.
 - If they want to create a post, comment on the post, or like the post, they must register and log in to the application. After registering, they can update the profile information created for them.
 - Users can perform CRUD (Create-Read-Update_Delete) operations.
+- The user is notified of the actions taken by a message that appears and disappears on the screen.
 - If they have forgotten their login password, an e-mail will be sent to their registered e-mail address so that they can create a login password.
 - They can also change their login passwords if they wish.
 - Like, view and comment statistics of all posts are displayed.
@@ -100,6 +101,7 @@ $ git clone https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git
 - Kullanıcılar anonim olarak gönderileri görüntüleyebilirler.
 - Gönderi oluşturmak, gönderiye yorum yazmak, gönderiyi beğenmek isterlerse uygulamaya kayıt olup giriş yapmaları gerekir. Kayıt olduktan sonra kendileri için oluşturulan profil bildilerini güncelleyebiliriler.
 - Kullanıcılar CRUD (Create-Read-Update_Delete) işlemleri yapabilir.
+- Yaptığı işlemler ekranda belirip kaybolan bir mesajla kullanıcıya bildirilir.
 - Eğer giriş şifrelerini unutmuşlarsa, kayıtlı e posta adreslerine giriş şifresi oluşturabilmeleri için posta gönderilir.
 - Ayrıca isterlerse giriş şifrelerini değiştirebilirler.
 - Tüm gönderilerin beğeni, görüntülenme, yorum istatiktikleri görüntülenmektedir. 
