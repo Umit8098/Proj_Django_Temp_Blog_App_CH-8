@@ -24,6 +24,7 @@
 - [Overview](#overview)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
+- [About This Project](#about-this-project)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
@@ -74,25 +75,39 @@
 
 <!-- This is an example, please update according to your application -->
 
-To clone and run this application, you'll need [Git](https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8) 
+To clone and run this application, you'll need [Git](https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8)
+
+When installing the required packages in the requirements.txt file, review the package differences for windows/macOS/Linux environments. 
+
+Complete the installation by uncommenting the appropriate package.
+
+---
+
+requirements.txt dosyasındaki gerekli paketlerin kurulumu esnasında windows/macOS/Linux ortamları için paket farklılıklarını inceleyin. 
+
+Uygun olan paketi yorumdan kurtararak kurulumu gerçekleştirin.
+
 ```bash
 # Clone this repository
 $ git clone https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git
 
 # Install dependencies
     $ python -m venv env
-    > env/Scripts/activate (for win OS)
+    $ python3 -m venv env (for macOs/linux OS)
+    $ env/Scripts/activate (for win OS)
     $ source env/bin/activate (for macOs/linux OS)
     $ pip install -r requirements.txt
-# Edit .backend.env to .env
-# Add SECRET_KEY in .env file
+    $ python manage.py migrate (for win OS)
+    $ python3 manage.py migrate (for macOs/linux OS)
+
+# Create and Edit .env
+# Add Your SECRET_KEY in .env file
 
 # Run the app
     $ python manage.py runserver
 ```
 
-## Acknowledgements
-- Information for your projects
+## About This Project
 - This is a blogging application.
 - Users can view posts anonymously.
 - If they want to create a post, comment on the post, or like the post, they must register and log in to the application. After registering, they can update the profile information created for them.
@@ -111,7 +126,11 @@ $ git clone https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git
 - Yaptığı işlemler ekranda belirip kaybolan bir mesajla kullanıcıya bildirilir.
 - Eğer giriş şifrelerini unutmuşlarsa, kayıtlı e posta adreslerine giriş şifresi oluşturabilmeleri için posta gönderilir.
 - Ayrıca isterlerse giriş şifrelerini değiştirebilirler.
-- Tüm gönderilerin beğeni, görüntülenme, yorum istatiktikleri görüntülenmektedir. 
+- Tüm gönderilerin beğeni, görüntülenme, yorum istatiktikleri görüntülenmektedir.
+
+## Acknowledgements
+- [Bootstrap4](https://pypi.org/project/crispy-bootstrap4/) - Projede kullanılan CSS framework'ü.
+- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Projede kullanılan formların CSS framework'ü.
 
 ## Contact
 
