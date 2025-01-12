@@ -36,14 +36,6 @@
 
 ---
 
-![screenshot](project_screenshot/home_list.png)
-
----
-
-![screenshot](project_screenshot/post_detail.png)
-
----
-
 ![screenshot](project_screenshot/register.png)
 
 ---
