@@ -32,6 +32,10 @@
 
 ## Overview
 
+![screenshot](project_screenshot/Blog_App.gif)
+
+---
+
 ![screenshot](project_screenshot/home_list.png)
 
 ---
