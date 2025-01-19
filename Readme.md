@@ -99,6 +99,21 @@ $ git clone https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git
 # Create and Edit .env
 # Add Your SECRET_KEY in .env file
 
+"""
+# example .env;
+
+SECRET_KEY =123456789abcdefg...
+
+# Sending email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = {YOUR EMAIL ADDRESS}
+EMAIL_HOST_PASSWORD = {YOUR HOST PASSWORD}
+EMAIL_USE_TLS = True
+
+"""
+
+
 # Run the app
     $ python manage.py runserver
 ```
