@@ -2,6 +2,8 @@
 
 <h1 align="center">Project_Django_Template_Blog_App</h1>
 
+<p align="center">📝 Hem backend hem de frontend kısmı Django ile oluşturulmuş bir blog uygulaması 📝</p>
+
 
 <div align="center">
   <h3>
@@ -22,33 +24,67 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+  - [Blog Gönderileri](#blog-gönderileri)
+  - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
+  - [Kullanıcı Profili](#kullanıcı-profili)
+  - [Yönetici Paneli](#yönetici-paneli)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [About This Project](#about-this-project)
 - [Acknowledgements](#acknowledgements)
+- [Key Features](#key-features)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
-
 ## Overview
-- Blog App
-![screenshot](project_screenshot/Blog_App.gif)
+
+- Django Template Blog App, hem frontend hem de backend kısmı Django kullanılarak oluşturulmuş bir blog uygulamasıdır. 
+- Bu uygulama aşağıdaki özellikleri sunar:
+
+- Kullanıcılar anonim olarak gönderileri görüntüleyebilir.
+- Kayıtlı kullanıcılar:
+  - Gönderi oluşturabilir, güncelleyebilir ve silebilir.
+  - Gönderilere yorum yapabilir ve beğeni ekleyebilir.
+  - Kendi profil bilgilerini düzenleyebilir.
+- Şifre unutulması durumunda, kayıtlı e-posta adresine şifre sıfırlama bağlantısı gönderilir.
+- Her gönderinin:
+  - Beğeni sayısı
+  - Görüntülenme sayısı
+  - Yorum sayısı görüntülenir.
+- Kullanıcılar yapılan işlemler hakkında ekran mesajlarıyla bilgilendirilir.
+
+### Blog Gönderileri
+<!-- ![screenshot](project_screenshot/Blog_App.gif) -->
+<img src="project_screenshot/Blog_App.gif" alt="Blog Gönderileri" width="400"/>
+➡ Blog gönderilerinin genel görünümü.
 
 ---
-- User/Authentication 
-![screenshot](project_screenshot/register.png)
+
+### Kullanıcı Kayıt Olma
+<!-- ![screenshot](project_screenshot/register.png) -->
+<img src="project_screenshot/register.png" alt="Kullanıcı Kayıt Olma" width="400"/>
+➡ Kullanıcıların uygulamaya kayıt olma sayfası.
 
 ---
+
+
 - User/Authentication 
 ![screenshot](project_screenshot/login.png)
 
 ---
-- User/Authentication 
-![screenshot](project_screenshot/profile.png)
+
+
+### Kullanıcı Profili
+<!-- ![screenshot](project_screenshot/profile.png) -->
+<img src="project_screenshot/profile.png" alt="Kullanıcı Profili" width="400"/>
+➡ Kayıtlı kullanıcıların profil düzenleme sayfası.
 
 ---
-- Blog App admin panel
-![screenshot](project_screenshot/admin_panel.png)
+
+### Yönetici Paneli
+<!-- ![screenshot](project_screenshot/admin_panel.png) -->
+<img src="project_screenshot/admin_panel.png" alt="Yönetici Paneli" width="400"/>
+➡ Blog uygulamasının admin panelinden bir görünüm.
 
 ---
 - User/Authentication
@@ -61,11 +97,13 @@
 ## Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+Bu proje aşağıdaki araçlar ve kütüphanelerle inşa edilmiştir:
 
-- HTML
-- Bootstrap4
-- JS
-- Django Templates
+- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/)
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı doğrulama ve yetkilendirme modülü.
+- [bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Modern ve duyarlı bir kullanıcı arayüzü sağlamak için.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Formları kolayca stilize etmek için.
+
 
 ## How To Use
 
@@ -119,7 +157,10 @@ EMAIL_USE_TLS = True
 ```
 
 ## About This Project
-- This is a blogging application.
+- This project was developed to enable users to easily create, edit blog posts and interact with other users. The application aims to solve the following problems:
+- Manage blog posts with a user-friendly interface.
+- Advanced features that meet user needs such as password reset and change.
+- Both frontend and backend support for CRUD operations.
 - Users can view posts anonymously.
 - If they want to create a post, comment on the post, or like the post, they must register and log in to the application. After registering, they can update the profile information created for them.
 - Users can perform CRUD (Create-Read-Update_Delete) operations.
@@ -130,7 +171,10 @@ EMAIL_USE_TLS = True
 
 <hr>
 
-- Bu bir blog uygulamasıdır.
+- Bu proje, kullanıcıların blog gönderilerini kolayca oluşturmasını, düzenlemesini ve diğer kullanıcılarla etkileşimde bulunmasını sağlamak için geliştirilmiştir. Uygulama, aşağıdaki sorunları çözmeyi hedefler:
+- Kullanıcı dostu bir arayüz ile blog gönderilerini yönetme.
+- Şifre sıfırlama ve değiştirme gibi kullanıcı ihtiyaçlarını karşılayan gelişmiş özellikler.
+- CRUD işlemleri için hem frontend hem de backend desteği.
 - Kullanıcılar anonim olarak gönderileri görüntüleyebilirler.
 - Gönderi oluşturmak, gönderiye yorum yazmak, gönderiyi beğenmek isterlerse uygulamaya kayıt olup giriş yapmaları gerekir. Kayıt olduktan sonra kendileri için oluşturulan profil bildilerini güncelleyebiliriler.
 - Kullanıcılar CRUD (Create-Read-Update_Delete) işlemleri yapabilir.
@@ -139,14 +183,29 @@ EMAIL_USE_TLS = True
 - Ayrıca isterlerse giriş şifrelerini değiştirebilirler.
 - Tüm gönderilerin beğeni, görüntülenme, yorum istatiktikleri görüntülenmektedir.
 
+
 ## Acknowledgements
-- [Bootstrap4](https://pypi.org/project/crispy-bootstrap4/) - Projede kullanılan CSS framework'ü.
-- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Projede kullanılan formların CSS framework'ü.
+- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/)
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı doğrulama ve yetkilendirme modülü.
+- [Bootstrap4](https://pypi.org/project/crispy-bootstrap4/) - Modern ve duyarlı bir kullanıcı arayüzü sağlamak için.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Formları kolayca stilize etmek için.
+
+
+## Key Features
+
+- Blog gönderilerini görüntüleme, oluşturma, düzenleme ve silme.
+- Kullanıcı kayıt, giriş ve profil güncelleme işlemleri.
+- Beğeni, görüntüleme ve yorum istatistikleri.
+- Şifre sıfırlama ve değiştirme.
+- Kullanıcı dostu mesaj bildirimleri.
+
 
 ## Contact
 
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
-- GitHub [@Umit8098](https://github.com/Umit8098)
+- **GitHub** [@Umit8098](https://github.com/Umit8098)
 
-- Linkedin [@umit-arat](https://linkedin.com/in/umit-arat/)
+- **LinkedIn** [@umit-arat](https://linkedin.com/in/umit-arat/)
 <!-- - Twitter [@your-twitter](https://{twitter.com/your-username}) -->
+
+
