@@ -2,19 +2,18 @@
 
 <h1 align="center">Project_Django_Template_Blog_App</h1>
 
-<p align="center">📝 Hem backend hem de frontend kısmı Django ile oluşturulmuş bir blog uygulaması 📝</p>
+<p align="center">📝 Django Template Blog App, kullanıcıların blog gönderilerini kolayca oluşturmasını, düzenlemesini ve diğer kullanıcılarla etkileşimde bulunmasını sağlayan bir full-stack uygulamadır. Kullanıcılar, blog gönderileri üzerinde tam kontrol sahibi olabilir ve uygulamanın gelişmiş özelliklerinden yararlanabilirler. 📝</p>
 
 
 <div align="center">
   <h3>
     <a href="https://umit8112.pythonanywhere.com/">
-      Demo
+      Canlı Demo
     </a>
      | 
-    <a href="https://umit8112.pythonanywhere.com/">
-      Project
+    <a href="https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8">
+      GitHub
     </a>
- 
   </h3>
 </div>
 
@@ -24,17 +23,17 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-  - [Blog Gönderileri](#blog-gönderileri)
   - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
   - [Kullanıcı Login](#kullanıcı-login)
+  - [Blog Gönderileri](#blog-gönderileri)
   - [Kullanıcı Profili](#kullanıcı-profili)
   - [Yönetici Paneli](#yönetici-paneli)
   - [Kullanıcı Password Change](#kullanıcı-password-change)
   - [Kullanıcı Password Reset](#kullanıcı-password-reset)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
+  - [Test Kullanıcı Bilgileri](#test-kullanıcı-bilgileri)
 - [About This Project](#about-this-project)
-- [Acknowledgements](#acknowledgements)
 - [Key Features](#key-features)
 - [Contact](#contact)
 
@@ -56,13 +55,6 @@
   - Yorum sayısı görüntülenir.
 - Kullanıcılar yapılan işlemler hakkında ekran mesajlarıyla bilgilendirilir.
 
-### Blog Gönderileri
-<!-- ![screenshot](project_screenshot/Blog_App.gif) -->
-<img src="project_screenshot/Blog_App.gif" alt="Blog Gönderileri" width="400"/>
-➡ Blog gönderilerinin genel görünümü.
-
----
-
 ### Kullanıcı Kayıt Olma
 <!-- ![screenshot](project_screenshot/register.png) -->
 <img src="project_screenshot/register.png" alt="Kullanıcı Kayıt Olma" width="400"/>
@@ -73,6 +65,14 @@
 ### Kullanıcı Login
 <!-- ![screenshot](project_screenshot/login.png) -->
 <img src="project_screenshot/login.png" alt="Kullanıcı Login" width="400"/>
+➡ Kullanıcıların giriş yaparak blog gönderilerine erişim sağlayabileceği ekran.
+
+---
+
+### Blog Gönderileri
+<!-- ![screenshot](project_screenshot/Blog_App.gif) -->
+<img src="project_screenshot/Blog_App.gif" alt="Blog Gönderileri" width="400"/>
+➡ Blog gönderilerinin genel görünümü.
 
 ---
 
@@ -93,23 +93,25 @@
 ### Kullanıcı Password Change
 <!-- ![screenshot](project_screenshot/change_password.png) -->
 <img src="project_screenshot/change_password.png" alt="Kullanıcı Password Change" width="400"/>
+➡ Şifre değiştirme işlemi için kullanılan doğrulama ekranı.
 
 ---
 
 ### Kullanıcı Password Reset
 <!-- ![screenshot](project_screenshot/reset_password.png) -->
 <img src="project_screenshot/reset_password.png" alt="Kullanıcı Password Reset" width="400"/>
+➡ Şifre sıfırlama işlemi için e-posta doğrulama ekranı.
 
 
 ## Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-Bu proje aşağıdaki araçlar ve kütüphanelerle inşa edilmiştir:
+Bu proje aşağıdaki araçlar ve kütüphaneler kullanılarak geliştirilmiştir:
 
-- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/)
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı doğrulama ve yetkilendirme modülü.
-- [bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Modern ve duyarlı bir kullanıcı arayüzü sağlamak için.
-- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Formları kolayca stilize etmek için.
+- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): Dinamik web sayfaları oluşturmak için.
+- [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): Duyarlı ve modern bir kullanıcı arayüzü sağlamak için.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): Formları kolayca stilize etmek için.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): Kullanıcı doğrulama ve yetkilendirme modülü.
 
 
 ## How To Use
@@ -163,6 +165,13 @@ EMAIL_USE_TLS = True
     $ python manage.py runserver
 ```
 
+### Test Kullanıcı Bilgileri
+
+Canlı demo için aşağıdaki test kullanıcı bilgilerini kullanabilirsiniz:
+- **Kullanıcı Adı**: testuser
+- **Şifre**: testpassword123
+
+
 ## About This Project
 - This project was developed to enable users to easily create, edit blog posts and interact with other users. The application aims to solve the following problems:
 - Manage blog posts with a user-friendly interface.
@@ -191,20 +200,13 @@ EMAIL_USE_TLS = True
 - Tüm gönderilerin beğeni, görüntülenme, yorum istatiktikleri görüntülenmektedir.
 
 
-## Acknowledgements
-- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/)
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Kullanıcı doğrulama ve yetkilendirme modülü.
-- [Bootstrap4](https://pypi.org/project/crispy-bootstrap4/) - Modern ve duyarlı bir kullanıcı arayüzü sağlamak için.
-- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Formları kolayca stilize etmek için.
-
-
 ## Key Features
 
-- Blog gönderilerini görüntüleme, oluşturma, düzenleme ve silme.
-- Kullanıcı kayıt, giriş ve profil güncelleme işlemleri.
-- Beğeni, görüntüleme ve yorum istatistikleri.
-- Şifre sıfırlama ve değiştirme.
-- Kullanıcı dostu mesaj bildirimleri.
+- **Gönderi Yönetimi**: Blog gönderilerini görüntüleme, oluşturma, düzenleme ve silme işlemleri.
+- **Kullanıcı Yönetimi**: Kayıt, giriş, profil düzenleme, şifre sıfırlama ve değiştirme.
+- **Etkileşimler**: Gönderilere yorum yapma ve beğeni ekleme.
+- **İstatistikler**: Her gönderi için beğeni, görüntülenme ve yorum sayılarının izlenmesi.
+- **Kullanıcı Bildirimleri**: Yapılan işlemler hakkında ekran mesajlarıyla bilgilendirme.
 
 
 ## Contact
