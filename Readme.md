@@ -26,8 +26,11 @@
 - [Overview](#overview)
   - [Blog Gönderileri](#blog-gönderileri)
   - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
+  - [Kullanıcı Login](#kullanıcı-login)
   - [Kullanıcı Profili](#kullanıcı-profili)
   - [Yönetici Paneli](#yönetici-paneli)
+  - [Kullanıcı Password Change](#kullanıcı-password-change)
+  - [Kullanıcı Password Reset](#kullanıcı-password-reset)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [About This Project](#about-this-project)
@@ -67,12 +70,11 @@
 
 ---
 
-
-- User/Authentication 
-![screenshot](project_screenshot/login.png)
+### Kullanıcı Login
+<!-- ![screenshot](project_screenshot/login.png) -->
+<img src="project_screenshot/login.png" alt="Kullanıcı Login" width="400"/>
 
 ---
-
 
 ### Kullanıcı Profili
 <!-- ![screenshot](project_screenshot/profile.png) -->
@@ -87,12 +89,17 @@
 ➡ Blog uygulamasının admin panelinden bir görünüm.
 
 ---
-- User/Authentication
-![screenshot](project_screenshot/change_password.png)
+
+### Kullanıcı Password Change
+<!-- ![screenshot](project_screenshot/change_password.png) -->
+<img src="project_screenshot/change_password.png" alt="Kullanıcı Password Change" width="400"/>
 
 ---
-- User/Authentication
-![screenshot](project_screenshot/reset_password.png)
+
+### Kullanıcı Password Reset
+<!-- ![screenshot](project_screenshot/reset_password.png) -->
+<img src="project_screenshot/reset_password.png" alt="Kullanıcı Password Reset" width="400"/>
+
 
 ## Built With
 
