@@ -10,10 +10,6 @@
     <a href="https://umit8112.pythonanywhere.com/">
       Canlı Demo
     </a>
-     | 
-    <a href="https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8">
-      GitHub
-    </a>
   </h3>
 </div>
 
