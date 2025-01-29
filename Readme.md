@@ -2,6 +2,11 @@
 
 <h1 align="center">Project_Django_Template_Blog_App</h1>
 
+<p align="center"><strong>📝 Django Template Blog App is a full-stack application that allows users to easily create and edit blog posts and interact with other users. Users can have full control over their blog posts and enjoy the advanced features of the app.
+ 📝</strong></p>
+
+---
+
 <p align="center">📝 Django Template Blog App, kullanıcıların blog gönderilerini kolayca oluşturmasını, düzenlemesini ve diğer kullanıcılarla etkileşimde bulunmasını sağlayan bir full-stack uygulamadır. Kullanıcılar, blog gönderileri üzerinde tam kontrol sahibi olabilir ve uygulamanın gelişmiş özelliklerinden yararlanabilirler. 📝</p>
 
 
@@ -19,22 +24,39 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-  - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
-  - [Kullanıcı Login](#kullanıcı-login)
-  - [Blog Gönderileri](#blog-gönderileri)
-  - [Kullanıcı Profili](#kullanıcı-profili)
-  - [Yönetici Paneli](#yönetici-paneli)
-  - [Kullanıcı Password Change](#kullanıcı-password-change)
-  - [Kullanıcı Password Reset](#kullanıcı-password-reset)
+  - [User Registration](#user-registration)
+  - [User Login](#user-login)
+  - [Blog Posts](#blog-posts)
+  - [User Profile](#user-profile)
+  - [Admin Panel](#admin-panel)
+  - [User Password Change](#user-password-change)
+  - [User Password Reset](#user-password-reset)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
-  - [Test Kullanıcı Bilgileri](#test-kullanıcı-bilgileri)
+  - [Test User Information](#test-user-information)
 - [About This Project](#about-this-project)
 - [Key Features](#key-features)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
 ## Overview
+
+- Django Template Blog App is a blog application with both frontend and backend created using Django. 
+- This app offers the following features:
+
+- Users can view posts anonymously.
+- Registered users:
+  - Can create, update and delete posts.
+  - Can comment and add likes to posts.
+  - Can edit his own profile information.
+- In case the password is forgotten, a password reset link will be sent to the registered e-mail address.
+- Each post:
+  - Number of likes
+  - Number of views
+  - The number of comments is displayed.
+- Users are informed about the actions taken via on-screen messages.
+
+---
 
 - Django Template Blog App, hem frontend hem de backend kısmı Django kullanılarak oluşturulmuş bir blog uygulamasıdır. 
 - Bu uygulama aşağıdaki özellikleri sunar:
@@ -51,63 +73,63 @@
   - Yorum sayısı görüntülenir.
 - Kullanıcılar yapılan işlemler hakkında ekran mesajlarıyla bilgilendirilir.
 
-### Kullanıcı Kayıt Olma
+### User Registration
 <!-- ![screenshot](project_screenshot/register.png) -->
 <img src="project_screenshot/register.png" alt="Kullanıcı Kayıt Olma" width="400"/>
-➡ Kullanıcıların uygulamaya kayıt olma sayfası.
+➡ User registration page for the application.
 
 ---
 
-### Kullanıcı Login
+### User Login
 <!-- ![screenshot](project_screenshot/login.png) -->
 <img src="project_screenshot/login.png" alt="Kullanıcı Login" width="400"/>
-➡ Kullanıcıların giriş yaparak blog gönderilerine erişim sağlayabileceği ekran.
+➡ Screen where users can log in and access blog posts.
 
 ---
 
-### Blog Gönderileri
+### Blog Posts
 <!-- ![screenshot](project_screenshot/Blog_App.gif) -->
 <img src="project_screenshot/Blog_App.gif" alt="Blog Gönderileri" width="400"/>
-➡ Blog gönderilerinin genel görünümü.
+➡ Overview of blog posts.
 
 ---
 
-### Kullanıcı Profili
+### User Profile
 <!-- ![screenshot](project_screenshot/profile.png) -->
 <img src="project_screenshot/profile.png" alt="Kullanıcı Profili" width="400"/>
-➡ Kayıtlı kullanıcıların profil düzenleme sayfası.
+➡ Profile editing page of registered users.
 
 ---
 
-### Yönetici Paneli
+### Admin Panel
 <!-- ![screenshot](project_screenshot/admin_panel.png) -->
 <img src="project_screenshot/admin_panel.png" alt="Yönetici Paneli" width="400"/>
-➡ Blog uygulamasının admin panelinden bir görünüm.
+➡ A view from the admin panel of the blog application.
 
 ---
 
-### Kullanıcı Password Change
+### User Password Change
 <!-- ![screenshot](project_screenshot/change_password.png) -->
 <img src="project_screenshot/change_password.png" alt="Kullanıcı Password Change" width="400"/>
-➡ Şifre değiştirme işlemi için kullanılan doğrulama ekranı.
+➡ Verification screen used for password change.
 
 ---
 
-### Kullanıcı Password Reset
+### User Password Reset
 <!-- ![screenshot](project_screenshot/reset_password.png) -->
 <img src="project_screenshot/reset_password.png" alt="Kullanıcı Password Reset" width="400"/>
-➡ Şifre sıfırlama işlemi için e-posta doğrulama ekranı.
+➡ Email verification screen for password reset.
 
 
 ## Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-Bu proje aşağıdaki araçlar ve kütüphaneler kullanılarak geliştirilmiştir:
+This project was developed using the following tools and libraries:
 
-- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): Dinamik web sayfaları oluşturmak için.
-- [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): Duyarlı ve modern bir kullanıcı arayüzü sağlamak için.
-- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): Formları kolayca stilize etmek için.
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): Kullanıcı doğrulama ve yetkilendirme modülü.
+- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): For creating dynamic web pages.
+- [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): To provide a responsive and modern user interface.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): To easily style forms.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): User authentication and authorization module.
 
 
 ## How To Use
@@ -161,11 +183,11 @@ EMAIL_USE_TLS = True
     $ python manage.py runserver
 ```
 
-### Test Kullanıcı Bilgileri
+### Test User Information
 
-Canlı demo için aşağıdaki test kullanıcı bilgilerini kullanabilirsiniz:
-- **Kullanıcı Adı**: testuser
-- **Şifre**: testpassword123
+For the live demo, you can use the following test user information:
+- **Username**: testuser
+- **Password**: testpassword123
 
 
 ## About This Project
@@ -181,7 +203,7 @@ Canlı demo için aşağıdaki test kullanıcı bilgilerini kullanabilirsiniz:
 - They can also change their login passwords if they wish.
 - Like, view and comment statistics of all posts are displayed.
 
-<hr>
+---
 
 - Bu proje, kullanıcıların blog gönderilerini kolayca oluşturmasını, düzenlemesini ve diğer kullanıcılarla etkileşimde bulunmasını sağlamak için geliştirilmiştir. Uygulama, aşağıdaki sorunları çözmeyi hedefler:
 - Kullanıcı dostu bir arayüz ile blog gönderilerini yönetme.
@@ -197,6 +219,14 @@ Canlı demo için aşağıdaki test kullanıcı bilgilerini kullanabilirsiniz:
 
 
 ## Key Features
+
+- **Post Management**: Viewing, creating, editing and deleting blog posts.
+- **User Management**: Registration, login, profile editing, password reset and change.
+- **Interactions**: Commenting and adding likes to posts.
+- **Statistics**: Tracking the number of likes, views and comments for each post.
+- **User Notifications**: Notification with on-screen messages about the actions taken.
+
+---
 
 - **Gönderi Yönetimi**: Blog gönderilerini görüntüleme, oluşturma, düzenleme ve silme işlemleri.
 - **Kullanıcı Yönetimi**: Kayıt, giriş, profil düzenleme, şifre sıfırlama ve değiştirme.
