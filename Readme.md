@@ -32,7 +32,6 @@ A full-stack Django blog application with authentication, CRUD operations, and u
 ![Blog Gönderileri](project_screenshot/Blog_App.gif)
  - Overview of blog posts.
 
----
 
 
 ## Navigation
