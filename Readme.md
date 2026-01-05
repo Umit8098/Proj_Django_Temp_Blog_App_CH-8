@@ -18,12 +18,22 @@ A full-stack Django blog application with authentication, CRUD operations, and u
 <div align="center">
   <h3>
     <a href="https://umit8112.pythonanywhere.com/">
-      Live Demo
+      🖥️ Live Demo
+    </a>
+    <a href="https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git">
+      📂 Project
     </a>
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+
+ - Blog Posts
+<!-- ![screenshot](project_screenshot/Blog_App.gif) -->
+![Blog Gönderileri](project_screenshot/Blog_App.gif)
+ - Overview of blog posts.
+
+---
+
 
 ## Navigation
 
@@ -88,13 +98,6 @@ A full-stack Django blog application with authentication, CRUD operations, and u
 <!-- ![screenshot](project_screenshot/login.png) -->
 <img src="project_screenshot/login.png" alt="Kullanıcı Login" width="400"/>
 ➡ Screen where users can log in and access blog posts.
-
----
-
-### Blog Posts
-<!-- ![screenshot](project_screenshot/Blog_App.gif) -->
-<img src="project_screenshot/Blog_App.gif" alt="Blog Gönderileri" width="400"/>
-➡ Overview of blog posts.
 
 ---
 
