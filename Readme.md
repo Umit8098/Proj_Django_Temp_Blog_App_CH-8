@@ -1,13 +1,18 @@
 <!-- Please update value in the {}  -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Django-5.x-092E20?logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Template--Based-FullStack-blue"/>
+  <img src="https://img.shields.io/badge/Bootstrap-4-7952B3?logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Auth-Session--Based-success"/>
+  <img src="https://img.shields.io/badge/Deployment-PythonAnywhere-purple"/>
+</p>
 
-<h1 align="center">Project_Django_Template_Blog_App</h1>
+<h1 align="center">📝 Django Template Blog App</h1>
 
-<p align="center"><strong>📝 Django Template Blog App is a full-stack application that allows users to easily create and edit blog posts and interact with other users. Users can have full control over their blog posts and enjoy the advanced features of the app.
- 📝</strong></p>
-
----
-
-<p align="center">📝 Django Template Blog App, kullanıcıların blog gönderilerini kolayca oluşturmasını, düzenlemesini ve diğer kullanıcılarla etkileşimde bulunmasını sağlayan bir full-stack uygulamadır. Kullanıcılar, blog gönderileri üzerinde tam kontrol sahibi olabilir ve uygulamanın gelişmiş özelliklerinden yararlanabilirler. 📝</p>
+<p align="center">
+A full-stack Django blog application with authentication, CRUD operations, and user interactions.
+</p>
 
 
 <div align="center">
@@ -20,9 +25,8 @@
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+## Navigation
 
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
   - [User Registration](#user-registration)
   - [User Login](#user-login)
