@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Deployment-PythonAnywhere-purple"/>
 </p>
 
-<h1 align="center">📝 Django Template Blog App</h1>
+<h1 align="center">📝Blog App Django Template</h1>
 
 <p align="center">
 A full-stack Django blog application with authentication, CRUD operations, and user interactions.
