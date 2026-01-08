@@ -21,7 +21,7 @@ A full-stack Django blog application with authentication, CRUD operations, and u
       🖥️ Live Demo
     </a>
     <a href="https://github.com/Umit8098/Proj_Django_Temp_Blog_App_CH-8.git">
-      📂 Project
+      📂 Repository
     </a>
   </h3>
 </div>
